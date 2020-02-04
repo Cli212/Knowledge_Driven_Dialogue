@@ -1,7 +1,5 @@
 knowledge-driven-dialogue
 =============================
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 # about the competition
 Human-machine conversation is one of the most important topics in artificial intelligence (AI) and has received much attention across academia and industry in recent years. Currently dialogue system is still in its infancy, which usually converses passively and utters their words more as a matter of response rather than on their own initiatives, which is different from human-human conversation. Therefore, we set up this competition on a new conversation task, named knowledge driven dialogue, where machines converse with humans based on a built knowledge graph. It aims at testing machines’ ability to conduct human-like conversations.<br>
 Please refer to [competition website](http://lic2019.ccf.org.cn/talk) for details of the competition.
@@ -11,10 +9,9 @@ Please refer to [task description](https://github.com/baidu/knowledge-driven-dia
 # about the dataset
 To facilitate the development of proactive conversation, we create a new conversation dataset named [DuConv](https://ai.baidu.com/broad/subordinate?dataset=duconv) , which has around 30k conversations containing 270k utterances. Each conversation is created by two crowdsourced workers, where one acts as conversation leader and another acts as follower. The leader is provided with a part of knowledge graph and is asked to sequentially change the discussion topics, following the given conversation goal. The follower is provided with nothing but conversation history and only has to respond to the leader. 
 # about the baseline
-We provide retrieval-based and generation-based baseline systems. Both systems were implemented by [PaddlePaddle](http://paddlepaddle.org/) (the Baidu deeplearning framework) and [Pytorch](https://pytorch.org/) (the Facebook deeplearning framework). The performance of the two systems is as follows:
+We provide generation-based baseline systems. The system was implemented by [Pytorch](https://pytorch.org/) (the Facebook deeplearning framework). The performance of the system is as follows:
 
 | baseline system | F1/BLEU1/BLEU2 | DISTINCT1/DISTINCT2 |
 | ------------- | ------------ | ------------ |
-| retrieval-based | 31.72/0.291/0.156 | 0.118/0.373 |
-| generation-based | 32.65/0.300/0.168 | 0.062/0.128 |
+| generation-based | 36.74/0.353/0.204 | 0.06/0.135 |
 
